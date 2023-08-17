@@ -377,10 +377,9 @@ nav
 .locations
     padding: 48px
     min-height: 716px
-    background-color: black
     position: relative
-    &_bg
-        background: url("../img/bg/3.png") center (center/cover) no-repeat
+    background: url('../img/bg/3.png') center (center / contain) no-repeat
+    background-color: black
     .label
         margin: 0 auto
         width: 112px
@@ -433,15 +432,36 @@ footer
             margin-top: 30px
             display: flex
             justify-content: space-between
+        &_wrapper > div
+            // width: 33%
+            &:nth-child(3)
+                display: flex
+                justify-content: flex-end
+        &_social
+            width: 160px
+            display: flex
+            justify-content: space-between
+            &_item
+                width: 32px
+                height: 32px
+                border-radius: 100%
+                background-color: black
+                display: flex
+                justify-content: center
+                align-items: center
+                text-decoration: none
+                color: white
         &_links
             text-align: center
             a
                 text-decoration: none
+            &_width
+                width: 33%
+                transform: translateX(15%)
             &_main
                 display: flex
-                justify-content: space-between
+                justify-content: space-around
                 a
-                    margin-right: 46px
                     color: #070716
                     font-size: 15px
                     font-weight: 300
