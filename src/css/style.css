@@ -45,7 +45,7 @@ nav {
 .subheader .subheader_logo {
     display: block;
     margin-top: 17px;
-    max-width: 100%; /*if the logo changes and it's size would be different - this will prevent for the img to exceed the div's width */
+    max-width: 100%;
 }
 
 .subheader .subheader_official {
