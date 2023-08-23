@@ -117,7 +117,7 @@ header
         +btn_hover
 .reasons
     min-height: 851px
-    padding: 20px 0 67px 0
+    padding: 48px 0 67px 0
     .col-md-6
         padding: 0
     .label
@@ -171,7 +171,7 @@ header
         line-height: 21px
         text-align: justify
 .mobile
-    height: 864px
+    min-height: 864px
     padding: 48px 0 79px 0
     background: url("../img/bg/graphics.png") center (center / cover) no-repeat
     .row
@@ -264,7 +264,7 @@ header
 
 .choice
     height: 900px
-    padding-top: 60px
+    padding-top: 48px
     background-color: black
     background-image: url("../img/bg/graphics.png")
     background-repeat: no-repeat
@@ -309,7 +309,7 @@ header
         font-weight: 300
         line-height: 24px
 .conditions
-    padding: 66px 0 57px 0
+    padding: 48px 0 57px 0
     .label
         margin: 0 auto
         width: 112px
@@ -328,7 +328,7 @@ header
         text-align: center
         font-size: 38px
         font-weight: 700
-        line-height: 48px
+        line-height: 16px
         text-transform: uppercase
     .rows
         margin: 33px 0
@@ -362,12 +362,13 @@ header
         font-weight: 300
         line-height: 24px
     .warning
-        .conditions_title
-            color: $second-color
-        .conditions_list
-            li
-                &:before
-                    background: url('../icons/check_red.png') center (center/cover) no-repeat
+        .conditions
+            &_title
+                color: $second-color
+            &_list
+                li
+                    &:before
+                        background: url('../icons/check_red.png') center (center/cover) no-repeat
 .locations
     padding: 48px
     min-height: 716px
@@ -392,7 +393,7 @@ header
         text-align: center
         font-size: 38px
         font-weight: 700
-        line-height: 48px
+        line-height: 16px
         text-transform: uppercase
     .subtitle
         color: #FFF
@@ -405,7 +406,7 @@ header
         text-align: center
         font-size: 15px
         font-weight: 400
-        line-height: 68px
+        line-height: 15px
         text-transform: uppercase
         position: absolute
         left: 50%
@@ -414,66 +415,65 @@ header
         bottom: 48px
         &:hover
             color: #fff
-footer
+.footer
     padding: 12px 23px 38px
-    .footer
-        &_divider
-            height: 4px
-            width: 300px
-            background-color: $main-color
-            margin: 0 auto
-        &_wrapper
-            margin-top: 30px
+    &_divider
+        height: 4px
+        width: 300px
+        background-color: $main-color
+        margin: 0 auto
+    &_wrapper
+        margin-top: 30px
+        display: flex
+        justify-content: space-between
+    &_wrapper > div
+        width: 33%
+        &:nth-child(3)
             display: flex
-            justify-content: space-between
-        &_wrapper > div
-            width: 33%
-            &:nth-child(3)
-                display: flex
-                justify-content: flex-end
-        &_social
-            width: 160px
+            justify-content: flex-end
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        &_item
+            width: 32px
+            height: 32px
+            border-radius: 100%
+            background-color: black
             display: flex
-            justify-content: space-between
-            &_item
-                width: 32px
-                height: 32px
-                border-radius: 100%
-                background-color: black
-                display: flex
-                justify-content: center
-                align-items: center
-                text-decoration: none
-                color: white
-        &_links
-            text-align: center
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            color: white
+    &_links
+        text-align: center
+        a
+            text-decoration: none
+        &_main
+            display: flex
+            justify-content: space-around
             a
-                text-decoration: none
-            &_main
-                display: flex
-                justify-content: space-around
-                a
-                    color: #070716
-                    font-size: 15px
-                    font-weight: 300
-                    text-transform: uppercase
-                    &:last-of-type
-                        margin-right: 0
-            &_sublinks
-                margin-top: 16px
-                display: flex
-                justify-content: space-between
-                a
-                    color: #999
-                    font-size: 11px
-                    font-weight: 300
-                    text-transform: uppercase
-            &_lang
-                margin-top: 14px
-                color: $main-color
-                text-align: center
-                font-size: 11px
-                font-weight: 400
+                color: #070716
+                font-size: 15px
+                font-weight: 300
                 text-transform: uppercase
+                &:last-of-type
+                    margin-right: 0
+        &_sublinks
+            margin-top: 16px
+            display: flex
+            justify-content: space-between
+            a
+                color: #999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        &_lang
+            margin-top: 14px
+            color: $main-color
+            text-align: center
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
 .xs-visible
     display: none

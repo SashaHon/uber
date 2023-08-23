@@ -35,6 +35,13 @@
         .title
             margin-top: 30px
             font-size: 36px
+    .footer
+        &_links
+            &_sublinks
+                a
+                    font-size: 10px
+            &_lang
+                font-size: 10px
 @media (max-width: 991px)
     .menu
         padding: 13px 20px
@@ -62,6 +69,9 @@
         &_descr
             font-size: 12px
     .reasons
+        .title
+            margin-top: 26px
+            font-size: 33px
         &_block
             flex-direction: column
             align-items: center
@@ -71,9 +81,53 @@
             margin-top: 20px
             max-width: 300px
     .mobile
+        .title
+            margin-top: 26px
+            font-size: 33px
         &_item
-            width: 270px
-
+            width: 100%
+    .choice
+        .title
+            margin-top: 26px
+            font-size: 33px
+    .conditions
+        .title
+            margin-top: 26px
+            font-size: 33px
+        &_list
+            padding-left: 30px
+            li
+                font-size: 16px
+        .rows
+            font-size: 19px
+    .locations
+        .title
+            margin-top: 26px
+            font-size: 33px
+    .footer
+        padding: 12px 0 16px 0
+        &_wrapper
+            margin-top: 10px
+            div
+                margin: 0 auto
+                margin-top: 4px
+                width: 80%
+                &:nth-child(1)
+                    justify-content: space-around
+                &:nth-child(2)
+                    order: -1
+        &_social
+            padding: 0 160px
+        &_links
+            &_main
+                a
+                    font-size: 12px
+        &_apps
+            display: block
+            margin: 0 auto
+    .md-flex-column
+        display: flex
+        flex-direction: column
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -144,6 +198,34 @@
         &_header
             font-size: 30px
             line-height: 45px
+    .mobile
+        &_item
+            &_subtitle
+                font-size: 19px
+    .footer
+        padding: 12px 0 16px 0
+        &_wrapper
+            margin-top: 10px
+            div
+                margin: 0 auto
+                margin-top: 4px
+                width: 80%
+                &:nth-child(1)
+                    justify-content: space-around
+                &:nth-child(2)
+                    order: -1
+        &_social
+            padding: 0 80px
+        &_links
+            &_main
+                a
+                    font-size: 12px
+        &_apps
+            display: block
+            margin: 0 auto
+    .md-flex-column
+        display: flex
+        flex-direction: column
 @media (max-width: 575px)
     nav
         height: 30px
@@ -205,3 +287,100 @@
         &_subtitle
             text-align: center
             font-size: 16px
+    .mobile
+        padding: 28px 14px 43px
+        .label
+            width: 115px
+            height: 27px
+        .title
+            margin-top: 16px
+            font-size: 16px
+        .subtitle
+            margin: 9px 0 0
+            font-size: 14px
+        .row
+            margin-top: 27px
+        &_item
+            padding: 80px 30px 0
+            height: 254px
+            &_subtitle
+                font-size: 18px
+            &_plus
+                bottom: 21px
+    .choice
+        padding: 28px 0 30px
+        height: auto
+        background-color: black
+        background-image: none
+        .label
+            width: 115px
+            height: 26px
+        img
+            margin-top: 36px
+        &_text
+            margin-top: 23px
+            color: white
+    .conditions
+        padding: 22px 0 0
+        .label
+            width: 115px
+            height: 26px
+        .title
+            margin-top: 16px
+            font-size: 16px
+        .rows
+            margin-top: 30px
+            font-size: 16px
+        &_list
+            margin: 5px 0 0
+            li
+                font-size: 14px
+                margin-bottom: 5px
+        &_title
+            margin-top: 25px
+    .locations
+        padding: 26px 0 30px
+        min-height: 360px
+        background-size: cover
+        .label
+            width: 79px
+            height: 26px
+        .title
+            font-size: 16px
+            margin: 16px 0 0
+        .subtitle
+            margin-top: 11px
+            font-size: 13px
+        &_link
+            width: 100%
+            bottom: 30px
+    .footer
+        padding: 24px 0 30px
+        &_divider
+            width: 253px
+            height: 4px
+        &_wrapper
+            div
+                width: 100%
+        &_links
+            &_main
+                a
+                    font-size: 14px
+            &_sublinks
+                flex-wrap: wrap
+                justify-content: center
+                a
+                    font-size: 11px
+                    margin-left: 46px
+                    &:first-child
+                        margin-left: 0
+            &_lang
+                font-size: 11px
+        &_social
+            padding: 0 70px
+        &_apps
+            margin-top: 20px
+    .no-padding
+        padding: 0
+    .xs-hidden
+        display: none
