@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uber</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -16,41 +17,50 @@
         <nav>
           <div class="container">
             <ul class="menu">
-              <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+              <li class="menu_item"><a href="#subheader" class="menu_link">Главная</a></li>
+              <li class="menu_item"><a href="#conditions" class="menu_link">Со своим автомобилем</a></li>
+              <li class="menu_item"><a href="#conditions" class="menu_link">На автомобиле компании</a></li>
+              <li class="menu_item"><a href="#conditions" class="menu_link">Требования</a></li>
+              <li class="menu_item"><a href="#footer" class="menu_link">Контакты</a></li>
               <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
             </ul>
           </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
 
-        <div class="subheader">
+        <div class="subheader" id="subheader">
           <div class="container">
             <div class="row">
-              <div class="col-md-4 offset-md-1">
-                <a href="#" class="subheader_logo"><img src="img/logo/logo.png" alt="Uber logo" class="logo_img"></a>
+              <div class="col-6 col-md-4 offset-md-1">
+                <a href="#" class="subheader_logo">
+                  <img src="img/logo/logo.png" alt="Uber logo" class="logo_img">
+                </a>
                 <div class="subheader_official">Официальный партнер Uber в Москве</div>
               </div>
-              <div class="col-md-2 offset-md-2">
-                <div class="contact_text">Звоните нам ежедневно</div>
-                <a href="tel:84957970988" class="contact_number">8 495 797 09 88</a>
+              <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+                <div class="subheader_call">Звоните нам ежедневно</div>
+                <a href="tel:84957970988" class="subheader_number">8 495 797 09 88</a>
               </div>
-              <div class="col-md-2">
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href="tel:84957970988" class="xs-visible subheader_number">8 495 797 09 88</a>
                 <button class="subheader_btn">заказать звонок</button>
               </div>
             </div>
           </div>
         </div>
+      </header>
 
         <section class="promo">
           <div class="container">
             <div class="row">
-              <div class="col-md-10 offset-md-1">
+              <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                 <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
                 <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
-                <div class="promo_desc">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место средитаксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы запиковое время.<br><br>
+                <div class="promo_descr">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место средитаксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы запиковое время.<br><br>
                   Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у насзарабатывают от 80000- 120000 в месяц.</div>
                 <button class="promo_btn">отправить заявку</button>
               </div>
@@ -229,12 +239,14 @@
             <div class="label">возможности</div>
             <h2 class="title">мобильное приложение убер</h2>
             <h3 class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</h3>
-            <img src="img/bg/uberX.png" alt="uberX">
+            <div class="col-lg-8 offset-lg-2">
+              <img src="img/bg/uberX.png" alt="uberX">
+            </div>
             <div class="choice_text">Машины на каждый день.<br>Лучше, быстрее и дешевле, чем такси</div>
           </div>
         </section>
 
-        <section class="conditions">
+        <section class="conditions" id="conditions">
           <div class="container">
             <div class="label">возможности</div>
             <h2 class="title">условия и требования</h2>
@@ -297,7 +309,7 @@
           </div>
         </section>
 
-        <footer>
+        <footer id="footer">
           <div class="footer_divider"></div>
           <div class="container-fluid footer_wrapper">
             
@@ -347,6 +359,6 @@
             
           </div>
         </footer>
-      </header>
+        <script src="../js/script.js"></script>
   </body>
 </html>
